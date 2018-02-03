@@ -1,0 +1,237 @@
+extends layouts/_layout.pug
+
+block variables
+	- var activePage = 'basic-table'
+	- var activeGroup = 'tables'
+
+block content
+	.app-title
+		div
+			h1
+				i.fa.fa-th-list
+				|  Basic Tables
+			p Basic bootstrap tables
+
+		ul.app-breadcrumb.breadcrumb
+			li.breadcrumb-item
+				i.fa.fa-home.fa-lg
+			li.breadcrumb-item
+				| Tables
+			li.breadcrumb-item.active
+				a(href="#") Simple Tables
+
+	.row
+		.col-md-6
+			.tile
+				h3.tile-title Simple Table
+				table.table
+					thead
+						tr
+							th #
+							th First Name
+							th Last Name
+							th Username
+					tbody
+						tr
+							td 1
+							td Mark
+							td Otto
+							td @mdo
+						tr
+							td 2
+							td Jacob
+							td Thornton
+							td @fat
+						tr
+							td 3
+							td Larry
+							td the Bird
+							td @twitter
+
+		.col-md-6
+			.tile
+				h3.tile-title Striped Table
+				table.table.table-striped
+					thead
+						tr
+							th #
+							th First Name
+							th Last Name
+							th Username
+					tbody
+						tr
+							td 1
+							td Mark
+							td Otto
+							td @mdo
+						tr
+							td 2
+							td Jacob
+							td Thornton
+							td @fat
+						tr
+							td 3
+							td Larry
+							td the Bird
+							td @twitter
+		.clearfix
+
+		.col-md-6
+			.tile
+				h3.tile-title Bordered Table
+				table.table.table-bordered
+					thead
+						tr
+							th #
+							th First Name
+							th Last Name
+							th Username
+					tbody
+						tr
+							td 1
+							td Mark
+							td Otto
+							td @mdo
+						tr
+							td 2
+							td Jacob
+							td Thornton
+							td @fat
+						tr
+							td 3
+							td Larry
+							td the Bird
+							td @twitter
+
+		.col-md-6
+			.tile
+				h3.tile-title Table Hover
+				table.table.table-hover
+					thead
+						tr
+							th #
+							th First Name
+							th Last Name
+							th Username
+					tbody
+						tr
+							td 1
+							td Mark
+							td Otto
+							td @mdo
+						tr
+							td 2
+							td Jacob
+							td Thornton
+							td @fat
+						tr
+							td 3
+							td Larry
+							td the Bird
+							td @twitter
+		.clearfix
+
+		.col-md-6
+			.tile
+				h3.tile-title Condensed Table
+				table.table.table-sm
+					thead
+						tr
+							th #
+							th First Name
+							th Last Name
+							th Username
+					tbody
+						tr
+							td 1
+							td Mark
+							td Otto
+							td @mdo
+						tr
+							td 2
+							td Jacob
+							td Thornton
+							td @fat
+						tr
+							td 3
+							td Larry
+							td the Bird
+							td @twitter
+						tr
+							td 4
+							td Jacob
+							td Thornton
+							td @fat
+						tr
+							td 5
+							td Mark
+							td Otto
+							td @mdo
+
+		.col-md-6
+			.tile
+				h3.tile-title Contextual Classes
+				table.table
+					thead
+						tr
+							th #
+							th First Name
+							th Last Name
+							th Username
+					tbody
+						tr.table-info
+							td 1
+							td Mark
+							td Otto
+							td @mdo
+						tr.table-success
+							td 2
+							td Jacob
+							td Thornton
+							td @fat
+						tr.table-danger
+							td 3
+							td Larry
+							td the Bird
+							td @twitter
+						tr.table-warning
+							td 4
+							td Jacob
+							td Thornton
+							td @fat
+
+		.clearfix
+
+		.col-md-12
+			.tile
+				h3.tile-title Responsive Table
+				.table-responsive
+					table.table
+						thead
+							tr
+								th #
+								th First Name
+								th Last Name
+								th Username
+						tbody
+							tr
+								td 1
+								td Mark
+								td Otto
+								td @mdo
+							tr
+								td 2
+								td Jacob
+								td Thornton
+								td @fat
+							tr
+								td 3
+								td Larry
+								td the Bird
+								td @twitter
+							tr
+								td 4
+								td Jacob
+								td Thornton
+								td @fat
+

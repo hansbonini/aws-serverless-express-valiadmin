@@ -1,0 +1,24 @@
+extends layouts/_layout.pug
+
+block variables
+	- var activePage = 'blank-page'
+	- var activeGroup = 'pages'
+
+block content
+	.app-title
+		div
+			h1
+				i.fa.fa-dashboard
+				|  Blank Page
+			p Start a beautiful journey here
+
+		ul.app-breadcrumb.breadcrumb
+			li.breadcrumb-item
+				i.fa.fa-home.fa-lg
+			li.breadcrumb-item
+				a(href='#') Blank Page
+
+	.row
+		.col-md-12
+			.tile
+				.tile-body Create a beautiful dashboard

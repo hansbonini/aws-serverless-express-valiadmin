@@ -1,0 +1,74 @@
+extends layouts/_layout.pug
+
+block variables
+	- var activePage = 'ui-cards'
+	- var activeGroup = 'ui-elements'
+
+block content
+	.app-title
+		div
+			h1
+				i.fa.fa-laptop
+				|  Cards
+			p Material design inspired cards
+
+		ul.app-breadcrumb.breadcrumb
+			li.breadcrumb-item
+				i.fa.fa-home.fa-lg
+			li.breadcrumb-item UI
+			li.breadcrumb-item
+				a(href="#") Cards
+
+	.row
+		.col-md-6
+			.tile
+				h3.tile-title Card Title
+				.tile-body.
+					Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.
+				.tile-footer
+					a.btn.btn-primary(href="#") Link
+
+		.col-md-6
+			.tile
+				.tile-title-w-btn
+					h3.title All Items
+					p
+						a.btn.btn-primary.icon-btn(href="")
+							i.fa.fa-plus
+							| Add Item	
+				.tile-body.
+					<b>Card with action button </b><br>
+					Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.
+
+
+		.clearfix
+
+		.col-md-6
+			.tile
+				.tile-title-w-btn
+					h3.title All Items
+					.btn-group
+						a.btn.btn-primary(href='#'): i.fa.fa-lg.fa-plus
+						a.btn.btn-primary(href='#'): i.fa.fa-lg.fa-edit
+						a.btn.btn-primary(href='#'): i.fa.fa-lg.fa-trash
+				.tile-body.
+					<b>Card with button group </b><br>
+					Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.
+
+		.col-md-6
+			.tile
+				.overlay
+					.m-loader.mr-4.
+						<svg class="m-circular" viewBox="25 25 50 50">
+							<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"/>
+						</svg>
+					h3.l-text Loading
+				.tile-title-w-btn
+					h3.title All Items
+					p
+						a.btn.btn-primary.icon-btn(href="")
+							i.fa.fa-plus
+							| Add Item	
+				.tile-body.
+					<b>Card with action button </b><br>
+					Hey there, I am a very simple card. I am good at containing small bits of information. I am quite convenient because I require little markup to use effectively.

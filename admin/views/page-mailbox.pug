@@ -1,0 +1,216 @@
+extends layouts/_layout.pug
+
+block variables
+	- var activePage = 'mailbox-page'
+	- var activeGroup = 'pages'
+
+block content
+	.app-title
+		div
+			h1
+				i.fa.fa-envelope-o
+				|  Mailbox
+			p A Mailbox page sample
+
+		ul.app-breadcrumb.breadcrumb
+			li.breadcrumb-item
+				i.fa.fa-home.fa-lg
+			li.breadcrumb-item
+				a(href='#') Mailbox
+
+	.row
+		.col-md-3
+
+			a.mb-2.btn.btn-primary.btn-block(href="") Compose Mail
+
+			.tile.p-0
+				h4.tile-title.folder-head Folders
+				.tile-body
+					ul.nav.nav-pills.flex-column.mail-nav
+						li.nav-item.active
+							a.nav-link(href='#')
+								i.fa.fa-inbox.fa-fw
+								|  Inbox
+								span.badge.badge-pill.badge-primary.float-right 12
+						li.nav-item
+							a.nav-link(href='#')
+								i.fa.fa-envelope-o.fa-fw
+								|  Sent
+						li.nav-item
+							a.nav-link(href='#')
+								i.fa.fa-file-text-o.fa-fw
+								|  Drafts
+						li.nav-item
+							a.nav-link(href='#')
+								i.fa.fa-filter.fa-fw
+								|  Junk 
+								span.badge.badge-pill.badge-primary.float-right 8
+						li.nav-item
+							a.nav-link(href='#')
+								i.fa.fa-trash-o.fa-fw
+								|  Trash
+
+		.col-md-9
+			.tile
+				.mailbox-controls
+
+					.animated-checkbox
+						label
+							input(type="checkbox")
+							span.label-text
+					.btn-group
+						button.btn.btn-primary.btn-sm(type='button')
+							i.fa.fa-trash-o
+						button.btn.btn-primary.btn-sm(type='button')
+							i.fa.fa-reply
+						button.btn.btn-primary.btn-sm(type='button')
+							i.fa.fa-share
+						button.btn.btn-primary.btn-sm(type='button')
+							i.fa.fa-refresh
+							
+
+				.table-responsive.mailbox-messages
+					table.table.table-hover
+						tbody
+							tr
+								td
+									.animated-checkbox
+										label
+											input(type="checkbox")
+											span.label-text 
+								td
+									a(href='#')
+										i.fa.fa-star-o
+								td
+									a(href='read-mail.html') John Doe
+								td.mail-subject
+									b A report on project almanac
+									|  - Lorem ipsum dolor sit amet adipisicing elit...
+								td
+									i.fa.fa-paperclip
+								td 8 mins ago
+							tr
+								td
+									.animated-checkbox
+										label
+											input(type="checkbox")
+											span.label-text 
+								td
+									a(href='#')
+										i.fa.fa-star
+								td
+									a(href='read-mail.html') John Doe
+								td
+									b A report on some good project
+									|  - Lorem ipsum dolor sit amet adipisicing elit...
+								td
+									
+								td 15 mins ago
+							tr
+								td
+									.animated-checkbox
+										label
+											input(type="checkbox")
+											span.label-text 
+								td
+									a(href='#')
+										i.fa.fa-star-o
+								td
+									a(href='read-mail.html') John Doe
+								td.mail-subject
+									b A report on project almanac
+									|  - Lorem ipsum dolor sit amet adipisicing elit...
+								td
+									i.fa.fa-paperclip
+								td 30 mins ago
+							tr
+								td
+									.animated-checkbox
+										label
+											input(type="checkbox")
+											span.label-text 
+								td
+									a(href='#')
+										i.fa.fa-star
+								td
+									a(href='read-mail.html') John Doe
+								td.mail-subject
+									b A report on project almanac
+									|  - Lorem ipsum dolor sit amet adipisicing elit...
+								td
+								td 25 December
+							tr
+								td
+									.animated-checkbox
+										label
+											input(type="checkbox")
+											span.label-text 
+								td
+									a(href='#')
+										i.fa.fa-star-o
+								td
+									a(href='read-mail.html') John Doe
+								td.mail-subject
+									b A report on project almanac
+									|  - Lorem ipsum dolor sit amet adipisicing elit...
+								td
+									i.fa.fa-paperclip
+								td 20 December
+							tr
+								td
+									.animated-checkbox
+										label
+											input(type="checkbox")
+											span.label-text 
+								td
+									a(href='#')
+										i.fa.fa-star
+								td
+									a(href='read-mail.html') John Doe
+								td.mail-subject
+									b A report on project almanac
+									|  - Lorem ipsum dolor sit amet adipisicing elit...
+								td
+								td 20 December
+							tr
+								td
+									.animated-checkbox
+										label
+											input(type="checkbox")
+											span.label-text 
+								td
+									a(href='#')
+										i.fa.fa-star
+								td
+									a(href='read-mail.html') John Doe
+								td.mail-subject
+									b A report on project almanac
+									|  - Lorem ipsum dolor sit amet adipisicing elit...
+								td
+									i.fa.fa-paperclip
+								td 20 December
+							tr
+								td
+									.animated-checkbox
+										label
+											input(type="checkbox")
+											span.label-text 
+								td
+									a(href='#')
+										i.fa.fa-star-o
+								td
+									a(href='read-mail.html') John Doe
+								td.mail-subject
+									b A report on project almanac
+									|  - Lorem ipsum dolor sit amet adipisicing elit...
+								td
+								td 20 December
+							
+
+				.text-right
+					span.text-muted.mr-2 Showing 1-15 out of 60
+					.btn-group
+						button.btn.btn-primary.btn-sm(type='button')
+							i.fa.fa-chevron-left
+						button.btn.btn-primary.btn-sm(type='button')
+							i.fa.fa-chevron-right

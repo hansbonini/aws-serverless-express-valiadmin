@@ -1,0 +1,114 @@
+extends layouts/_layout.pug
+
+block variables
+	- var activePage = 'invoice-page'
+	- var activeGroup = 'pages'
+
+block content
+	.app-title
+		div
+			h1
+				i.fa.fa-file-text-o
+				|  Invoice
+			p A Printable Invoice Format
+
+		ul.app-breadcrumb.breadcrumb
+			li.breadcrumb-item
+				i.fa.fa-home.fa-lg
+			li.breadcrumb-item
+				a(href='#') Invoice
+
+	.row
+		.col-md-12
+			.tile
+				section.invoice
+
+					.row.mb-4
+						.col-6
+							h2.page-header
+								i.fa.fa-globe
+								|  Vali Inc
+						.col-6
+							h5.text-right Date: 01/01/2016
+
+					.row.invoice-info
+						.col-4
+							| From
+							address
+								strong Vali Inc.
+								br
+								| 518 Akshar Avenue
+								br
+								| Gandhi Marg
+								br
+								| New Delhi
+								br
+								| Email: hello@vali.com
+
+						.col-4
+							| To
+							address
+								strong John Doe
+								br
+								| 795 Folsom Ave, Suite 600
+								br
+								| San Francisco, CA 94107
+								br
+								| Phone: (555) 539-1037
+								br
+								| Email: john.doe@example.com
+
+						.col-4
+							b Invoice #007612
+							br
+							br
+							b Order ID:
+							|  4F3S8J
+							br
+							b Payment Due:
+							|  2/22/2014
+							br
+							b Account:
+							|  968-34567
+							
+					.row
+						.col-12.table-responsive
+							table.table.table-striped
+								thead
+									tr
+										th Qty
+										th Product
+										th Serial #
+										th Description
+										th Subtotal
+								tbody
+									tr
+										td 1
+										td The Hunger Games
+										td 455-981-221
+										td El snort testosterone trophy driving gloves handsome
+										td $41.32
+									tr
+										td 1
+										td City of Bones
+										td 247-925-726
+										td Wes Anderson umami biodiesel
+										td $75.52
+									tr
+										td 1
+										td The Maze Runner
+										td 545-457-47
+										td Terry Richardson helvetica tousled street art master
+										td $15.25
+									tr
+										td 1
+										td The Fault in Our Stars
+										td 757-855-857
+										td Tousled lomo letterpress
+										td $03.44
+
+					.row.d-print-none.mt-2
+						.col-12.text-right
+							a.btn.btn-primary(href='javascript:window.print();', target='_blank')
+								i.fa.fa-print
+								|  Print

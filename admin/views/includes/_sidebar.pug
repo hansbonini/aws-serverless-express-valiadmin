@@ -1,0 +1,119 @@
+.app-sidebar__overlay(data-toggle="sidebar")
+aside.app-sidebar
+
+	.app-sidebar__user
+		img.app-sidebar__user-avatar(src='https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg', alt='User Image')
+		div
+			p.app-sidebar__user-name John Doe
+			p.app-sidebar__user-designation Frontend Developer
+
+	ul.app-menu
+		li
+			a.app-menu__item(href='index.html' class={'active': activePage == 'dashboard'})
+				i.app-menu__icon.fa.fa-dashboard
+				span.app-menu__label Dashboard
+
+		li.treeview(class={'is-expanded': activeGroup == 'ui-elements'})
+			a.app-menu__item(href='#', data-toggle='treeview')
+				i.app-menu__icon.fa.fa-laptop
+				span.app-menu__label UI Elements
+				i.treeview-indicator.fa.fa-angle-right
+			ul.treeview-menu
+				li
+					a.treeview-item(href='bootstrap-components.html' class={'active': activePage == 'ui-bootstrap'})
+						i.icon.fa.fa-circle-o
+						|  Bootstrap Elements
+				li
+					a.treeview-item(href='http://fontawesome.io/icons/', target="_blank")
+						i.icon.fa.fa-circle-o
+						|  Font Icons
+				li
+					a.treeview-item(href='ui-cards.html' class={'active': activePage == 'ui-cards'})
+						i.icon.fa.fa-circle-o
+						|  Cards
+				li
+					a.treeview-item(href='widgets.html' class={'active': activePage == 'ui-widgets'})
+						i.icon.fa.fa-circle-o
+						|  Widgets
+
+		li
+			a.app-menu__item(href='charts.html' class={'active': activePage == 'charts'})
+				i.app-menu__icon.fa.fa-pie-chart
+				span.app-menu__label Charts
+
+		li.treeview(class={'is-expanded': activeGroup == 'forms'})
+			a.app-menu__item(href='#' data-toggle='treeview')
+				i.app-menu__icon.fa.fa-edit
+				span.app-menu__label Forms
+				i.treeview-indicator.fa.fa-angle-right
+			ul.treeview-menu
+				li
+					a.treeview-item(href='form-components.html' class={'active': activePage == 'form-components'})
+						i.icon.fa.fa-circle-o
+						|  Form Components
+				li
+					a.treeview-item(href='form-custom.html' class={'active': activePage == 'form-custom'})
+						i.icon.fa.fa-circle-o
+						|  Custom Components
+				li
+					a.treeview-item(href='form-samples.html' class={'active': activePage == 'form-samples'})
+						i.icon.fa.fa-circle-o
+						|  Form Samples
+				li
+					a.treeview-item(href='form-notifications.html' class={'active': activePage == 'form-notifications'})
+						i.icon.fa.fa-circle-o
+						|  Form Notifications
+
+		li.treeview(class={'is-expanded': activeGroup == 'tables'})
+			a.app-menu__item(href='#' data-toggle='treeview')
+				i.app-menu__icon.fa.fa-th-list
+				span.app-menu__label Tables
+				i.treeview-indicator.fa.fa-angle-right
+			ul.treeview-menu
+				li
+					a.treeview-item(href='table-basic.html' class={'active': activePage == 'basic-table'})
+						i.icon.fa.fa-circle-o
+						|  Basic Tables
+				li
+					a.treeview-item(href='table-data-table.html' class={'active': activePage == 'data-table'})
+						i.icon.fa.fa-circle-o
+						|  Data Tables
+
+		li.treeview(class={'is-expanded': activeGroup == 'pages'})
+			a.app-menu__item(href='#' data-toggle='treeview')
+				i.app-menu__icon.fa.fa-file-text
+				span.app-menu__label Pages
+				i.treeview-indicator.fa.fa-angle-right
+			ul.treeview-menu
+				li
+					a.treeview-item(href='blank-page.html' class={'active': activePage == 'blank-page'})
+						i.icon.fa.fa-circle-o
+						|  Blank Page
+				li
+					a.treeview-item(href='page-login.html')
+						i.icon.fa.fa-circle-o
+						|  Login Page
+				li
+					a.treeview-item(href='page-lockscreen.html')
+						i.icon.fa.fa-circle-o
+						|  Lockscreen Page
+				li
+					a.treeview-item(href='page-user.html' class={'active': activePage == 'user-page'})
+						i.icon.fa.fa-circle-o
+						|  User Page
+				li
+					a.treeview-item(href='page-invoice.html' class={'active': activePage == 'invoice-page'})
+						i.icon.fa.fa-circle-o
+						|  Invoice Page
+				li
+					a.treeview-item(href='page-calendar.html' class={'active': activePage == 'calendar-page'})
+						i.icon.fa.fa-circle-o
+						|  Calendar Page
+				li
+					a.treeview-item(href='page-mailbox.html' class={'active': activePage == 'mailbox-page'})
+						i.icon.fa.fa-circle-o
+						|  Mailbox
+				li
+					a.treeview-item(href='page-error.html')
+						i.icon.fa.fa-circle-o
+						|  Error Page
